@@ -1,9 +1,6 @@
-name: Build
+name: Socket Scanning Demo
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_dispatch:  # Manual trigger only - DO NOT enable other triggers
 jobs:
   build:
     runs-on: ubuntu-latest
